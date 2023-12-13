@@ -15,7 +15,7 @@ body, html{
 }
 
 .header {
-  background-color: var(--colors-primary, #40cd55);
+  background-color: var(--colors-primary, #7fe68e);
   display: flex;
   flex-direction: row;
   padding: 31px 80px 31px 38px;
