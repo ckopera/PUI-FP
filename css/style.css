@@ -1,14 +1,9 @@
+/* General header and body styling */
 .main-container1 {
     display: block;
     height: 100%;
     background: var(--colors-light-bgd, #FFF8F0);
   }
-
-.main-container2 {
-  display: block;
-  height: 100%;
-  background: var(--colors-dark-bgd, #1E1E25);
-}
 
 body, html{
   height: 100%;
@@ -67,6 +62,7 @@ body, html{
   font: 400 40px/54px Bree Serif, sans-serif;
 }
 
+/* Homepage */
 .options {
   display: flex;
   flex-direction: row;
@@ -108,12 +104,7 @@ body, html{
   color: var(--colors-font-dark, #000);
 }
 
-.option-link:last-child {
-  background-color: var(--colors-dark-bgd, #1e1e25);
-  color: #fff;
-  padding: 380px 20px 277px;
-}
-
+/* Restaurant finder page drop dwons */
 .dropDownCuisine {
   border-radius: 4px;
   background-color: var(--primary, #fff);
@@ -178,6 +169,7 @@ body, html{
   flex-direction: column;
 }
 
+/* Go, back, and "I don't know" buttons */
 .buttonsDiv{
   display: flex;
   justify-content: space-evenly;
@@ -225,6 +217,7 @@ body, html{
   line-height: normal;
 }
 
+/* Results page styling */
 #restaurants-container{
   margin: 20px;
   padding: 20px;

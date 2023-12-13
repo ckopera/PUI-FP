@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js"></script>
+    <script defer src="/js/script.js"></script>
     <title>Find a Rest</title>
 </head>
+
 <body>
   <!-- Title Div -->
   <div class="main-container1">
     <div class="header">
       <a href="homepage.html">
         <div class="logo">
-          <img loading="lazy" src="Figma Image 200x200.png" alt="Eat Explorer Logo" class="logo-img" />
+          <img loading="lazy" src="/assets/Figma Image 200x200.png" alt="Eat Explorer Logo" class="logo-img" />
         </div>
       </a>
+
       <div class="title-container">
         <h1 class="title">Eat Explorer</h1>
         <h2 class="subtitle">How would you like to explore today?</h2>
       </div>
     </div>
 
-<!-- Drop downs -->
+<!-- Drop down 1 -->
   <div class="dropDownContainer">
     <div class="dropDownBox">
       <h2 class="dropDownTitle">
@@ -43,6 +45,8 @@
       </select>
     </div>
   </div>
+
+  <!-- Drop down 2 -->
     <div class="dropDownBox">
       <h2 class="dropDownTitle">
         You Eatin' Good?
@@ -60,6 +64,8 @@
       </select>
     </div>
   </div>
+
+  <!-- Drop down 3 -->
     <div class="dropDownBox">
       <h2 class="dropDownTitle">
         You got a car?
@@ -81,12 +87,12 @@
 
   <!-- Buttons -->
   <div class="buttonsDiv">
-    <a href="../restFinderResults.html" onclick="randomRestaurant()">
+    <a href="/html/restFinderResults.html" onclick="randomRestaurant()">
       <button class="idk">
         I don't know...
       </button>
     </a>
-    <a href="../restFinderResults.html" onclick="saveToLocalStorage()">
+    <a href="/html/restFinderResults.html" onclick="saveToLocalStorage()">
       <button class="go">
         Go
       </button>

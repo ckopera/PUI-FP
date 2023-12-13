@@ -1,3 +1,4 @@
+// Local storage restaraunt parameters
 function saveToLocalStorage(){
     let cuisine = document.querySelector(".dropDownCuisine").value;
     localStorage.setItem("cuisine", cuisine)
@@ -11,12 +12,14 @@ function saveToLocalStorage(){
     localStorage.setItem("quantity", 5)
 }
 
+// setting API key from input
 function setKey(){
     console.log("setAPIKey");
     let APIInput = document.querySelector("#inputAPI").value;
     localStorage.setItem("APIKey", APIInput);
 }
 
+// generating random restaurant
 function randomRestaurant(){
     setKey();
     const cuisines = ['japanese_restaurant', 'mexican_restaurant', 'chinese_restaurant', 'indian_restaurant', 'thai_restaurant'];
@@ -34,6 +37,7 @@ function randomRestaurant(){
     localStorage.setItem("quantity", 1)
 }
 
+// retrieving local storage restaurant search parameters
 retrieveFromLocalStorage();
 
 function retrieveFromLocalStorage(){
@@ -47,6 +51,7 @@ function retrieveFromLocalStorage(){
 
 let API_KEY = null;
 
+// API call
 async function getData(APIKey, apiCuisine, apiPrice, apiProximity, quantity) {
   let API_KEY = APIKey;
   let num_locations = quantity;
@@ -79,6 +84,7 @@ async function getData(APIKey, apiCuisine, apiPrice, apiProximity, quantity) {
   console.log(result['places']);
   const options = [];
 
+  //   Pushing API call into HTML
   for (let i = 0; i < result.places.length; i++) {
         let place = result.places[i];
         let address = place.addressComponents;
@@ -104,6 +110,7 @@ async function getData(APIKey, apiCuisine, apiPrice, apiProximity, quantity) {
   displayRestaurants(options);
 }
 
+// Displaying restaurants in HTML
 function displayRestaurants(restaurants) {
     const container = document.getElementById('restaurants-container');
     
