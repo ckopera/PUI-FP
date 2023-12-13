@@ -1,0 +1,306 @@
+.main-container1 {
+    display: block;
+    height: 100%;
+    background: var(--colors-light-bgd, #FFF8F0);
+  }
+
+.main-container2 {
+  display: block;
+  height: 100%;
+  background: var(--colors-dark-bgd, #1E1E25);
+}
+
+body, html{
+  height: 100%;
+}
+
+.header {
+  background-color: var(--colors-primary, #40cd55);
+  display: flex;
+  flex-direction: row;
+  padding: 31px 80px 31px 38px;
+}
+
+
+.logo-img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 250px;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 20%; /* Add this line */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 100%;
+}
+
+.title {
+  color: var(--colors-font-dark, #000);
+  text-align: center;
+  white-space: nowrap;
+  font: 400 60px/81px Bree Serif, sans-serif;
+}
+
+.whiteTitle{
+  color: #FFF;
+  text-align: center;
+  font-family: Bree Serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtitle {
+  color: var(--colors-font-dark, #000);
+  text-align: center;
+  align-self: stretch;
+  margin-top: 28px;
+  white-space: nowrap;
+  font: 400 40px/54px Bree Serif, sans-serif;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
+}
+
+.option-link1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  background: var(--colors-light-bgd, #FFF8F0);
+  justify-content: center;
+  }
+
+.option-link2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  background: var(--colors-dark-bgd, #ff3f52);    
+  justify-content: center;
+}
+
+.optionText{
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: Bree Serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.option-link:last-child {
+  background-color: var(--colors-dark-bgd, #1e1e25);
+  color: #fff;
+  padding: 380px 20px 277px;
+}
+
+.dropDownCuisine {
+  border-radius: 4px;
+  background-color: var(--primary, #fff);
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 80px;
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.dropDownPrice {
+  border-radius: 4px;
+  background-color: var(--primary, #fff);
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 80px;
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.dropDownProximity {
+  border-radius: 4px;
+  background-color: var(--primary, #fff);
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 80px;
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.dropDownContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.dropDownTitle{
+  color: #000;
+  text-align: center;
+  font-family: Bree Serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dropDownBox{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonsDiv{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.idk{
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--colors-dark-box, #111D4A);
+  color: #FFF;
+  font-family: Bree Serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.go{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--colors-primary, #F98029);
+  color: #000;
+  font-family: Bree Serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  width: 202px;
+}
+
+.dropDownMonth{
+  border-radius: 4px;
+  background-color: var(--primary, #fff);
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 80px;
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.dropDownDay{
+  border-radius: 4px;
+  background-color: var(--primary, #fff);
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 80px;
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.dropDownYear{
+  border-radius: 4px;
+  background-color: var(--primary, #fff);
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  padding-right: 80px;
+  max-height: 70vh;
+  overflow: scroll;
+}
+
+.back{
+  border-radius: 10px;
+  background: var(--colors-dark-box, #111D4A);
+  padding: 10px;
+  color: #7BE969;
+  text-align: center;
+  font-family: Bree Serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#restaurants-container{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+#restaurants-container a {
+  text-decoration: none;
+  border: none;
+}
+
+#restaurants-container .restaurantName {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.restaurantLocation {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.restaurantRating {
+  font-size: 1.2em;
+  color: #006400;
+}
+
+.restaurantPrice {
+  font-size: 1.2em;
+  color: #0000FF;
+}
+
+.restaurantTotalRating {
+  font-size: 1.2em;
+  color: #FF4500;
+}

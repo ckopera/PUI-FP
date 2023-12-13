@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>Find a Rest</title>
+</head>
+<body>
+  <!-- Title Div -->
+  <div class="main-container1">
+    <div class="header">
+      <a href="homepage.html">
+        <div class="logo">
+          <img loading="lazy" src="Figma Image 200x200.png" alt="Eat Explorer Logo" class="logo-img" />
+        </div>
+      </a>
+      <div class="title-container">
+        <h1 class="title">Eat Explorer</h1>
+        <p class="subtitle">How would you like to explore today?</p>
+      </div>
+    </div>
+
+<!-- Drop downs -->
+  <div class="dropDownContainer">
+    <div class="dropDownBox">
+      <h2 class="dropDownTitle">
+        How we Feeling?
+      </h2>
+      <div class="subAndDropDown">
+      <p class="subtitleText">
+        Cuisine
+      </p>
+      <select name = "restaurantCusine" class="dropDownCuisine">
+        <option value="1">Select Cuisine</option>
+        <option value="japanese_restaurant">Japanese</option>
+        <option value="mexican_restaurant">Mexican</option>
+        <option value="chinese_restaurant">Chinese</option>
+        <option value="indian_restaurant">Indian</option>
+        <option value="thai_restaurant">Thai</option>
+      </select>
+    </div>
+  </div>
+    <div class="dropDownBox">
+      <h2 class="dropDownTitle">
+        You Eatin' Good?
+      </h2>
+      <div class="subAndDropDown">
+      <p class="subtitleText">
+        Price
+      </p>
+      <select name = "restaurantPrice" class="dropDownPrice">
+        <option value="1">Select Budget</option>
+        <option value="$">$</option>
+        <option value="$$">$$</option>
+        <option value="$$$">$$$</option>
+        <option value="$$$$">$$$$</option>
+      </select>
+    </div>
+  </div>
+    <div class="dropDownBox">
+      <h2 class="dropDownTitle">
+        You got a car?
+      </h2>
+      <div class="subAndDropDown">
+        <p class="subtitleText">
+          Proximity
+        </p>
+      <select name = "restaurantProximity" id="proximity" class="dropDownProximity">
+        <option value="1">Select Proximity</option>
+        <option value="1200"> < 1 mile </option>
+        <option value="2400"> 1 - 2 miles </option>
+        <option value="3600"> 2 - 3 miles</option>
+        <option value="4800"> 4+ miles </option>
+      </select>
+    </div>
+  </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttonsDiv">
+    <a href="../restFinderResults.html" onclick="randomRestaurant()">
+      <button class="idk">
+        I don't know...
+      </button>
+    </a>
+    <a href="../restFinderResults.html" onclick="saveToLocalStorage()">
+      <button class="go">
+        Go
+      </button>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

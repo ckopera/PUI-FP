@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eat Explorer</title>
+</head>
+<body>
+<!-- Title Div -->
+  <div class="main-container1">
+    <div class="header">
+      <a href="homepage.html">
+        <div class="logo">
+          <img loading="lazy" src="Figma Image 200x200.png" alt="Eat Explorer Logo" class="logo-img" />
+        </div>
+      </a>
+      <div class="title-container">
+        <h1 class="title">Eat Explorer</h1>
+        <p class="subtitle">How would you like to explore today?</p>
+      </div>
+    </div>
+
+<!-- Options -->
+    <div class="options">
+      <div class="option-link1" onclick=setKey()>
+       <a href="restaurantFinder.html">
+        <div class="optionText">
+          Find a Restaurant
+        </div>
+        </a>
+      </div>
+        <div class="option-link2">
+          <a href="restFinderResults.html">
+            <div class="optionText" onclick="randomRestaurant()">
+              Surprise me!
+            </div>
+          </a>
+      </div>
+    </div>
+    <div class="inputAPI">
+      <label for="inputAPI">Enter API Key:</label>
+      <input type="text" id="inputAPI" name="inputAPI">
+    </div>
+  </div>
+</body>
+</html>
