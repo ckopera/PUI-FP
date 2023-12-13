@@ -26,7 +26,7 @@ body, html{
   aspect-ratio: 1;
   object-fit: contain;
   object-position: center;
-  width: 250px;
+  width: 100%;
   overflow: hidden;
   max-width: 100%;
   border-radius: 20%; /* Add this line */
@@ -105,6 +105,7 @@ body, html{
   font-family: Bree Serif;
   font-weight: 400;
   text-decoration: none;
+  color: var(--colors-font-dark, #000);
 }
 
 .option-link:last-child {
@@ -209,45 +210,6 @@ body, html{
   font-style: normal;
   font-weight: 400;
   width: 202px;
-}
-
-.dropDownMonth{
-  border-radius: 4px;
-  background-color: var(--primary, #fff);
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px;
-  padding-right: 80px;
-  max-height: 70vh;
-  overflow: scroll;
-}
-
-.dropDownDay{
-  border-radius: 4px;
-  background-color: var(--primary, #fff);
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px;
-  padding-right: 80px;
-  max-height: 70vh;
-  overflow: scroll;
-}
-
-.dropDownYear{
-  border-radius: 4px;
-  background-color: var(--primary, #fff);
-  display: flex;
-  margin-top: 10px;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px;
-  padding-right: 80px;
-  max-height: 70vh;
-  overflow: scroll;
 }
 
 .back{
